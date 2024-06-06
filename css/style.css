@@ -1,0 +1,51 @@
+:root {
+    --primary-color: #083B4C;
+    --primary-text: white;
+    --not-divisible-color: #1389B2;
+    --fizzbuzz-color: #F0466F;
+    --buzz-color: #FFD166;
+    --fizz-color: #0CD6A1;
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+h1{
+    color: var(--primary-text);
+    text-align: center;
+    font-size: 3em;
+}
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.square{
+    border: solid 1px black;
+    width: calc(100% / 7 - 37px);
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.not-divisible{
+    background-color: var(--not-divisible-color);
+}
+
+.divisible-by-3-5{
+    background-color: var(--fizzbuzz-color);
+}
+
+.divisible-by-3{
+    background-color: var(--fizz-color);
+}
+
+.divisible-by-5{
+    background-color: var(--buzz-color);
+}
